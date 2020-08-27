@@ -1,0 +1,327 @@
+﻿@import url('https://fonts.googleapis.com/css?famiy=Poppins:300,400,500,600,700,800,900&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 60vh;
+	background: #000622;
+  
+}
+
+/* header */
+
+.navbar-brand{
+    font-size:20px;
+}
+
+/* header */
+
+
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;  /* */
+}
+#logo:after {
+  content:"calculator";
+  position: absolute;
+  left: 8px;
+  top: 32px;
+}
+#logo:after {
+  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+
+
+#calcidiv{
+	display:block;
+	text-align:center;
+	width: 159px;
+	height: 200px;
+	
+}
+.calculator
+{
+	
+    text-align:center;
+	padding:50px;
+	position: relative;
+	display: grid;
+	left:100%;
+	margin-left:-20px;
+}
+.calculator .value
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+}
+.calculator span
+{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #154c4e;
+	place-items: center;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.calculator span.clear
+{
+	grid-column: span 2;
+	width: 120px;
+	background: #ff3077;
+	
+}
+.calculator span.plus
+{
+	grid-row: span 2;
+	height:120px;
+}
+.calculator span.equal
+{
+	background: #03b1ff;
+}
+.calculator span:active
+{
+	background: #74ff3b;
+	color: #111;
+}
+
+
+
+
+
+
+
+footer{
+	position: absolute;   /* */
+	top:600px;
+	
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px; 
+	
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+
+@media (max-width: 700px){
+
+	#logo{
+		font-size:10vw
+	    margin-left:auto;
+		margin-right:auto;
+		font-size:10vw;
+		text-align:center;
+		left:27%
+	}
+
+}
+
+
+ 
+@media (max-width: 880px) {
+
+	 
+	#calcidiv{
+	width:159px;
+	margin-left:auto;
+	margin-right:480px;
+	resize:vertical;
+	box-sizing:border-box;
+	height: 200px;
+	}
+
+  	
+  
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	
+}
+
