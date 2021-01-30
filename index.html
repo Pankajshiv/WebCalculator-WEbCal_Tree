@@ -58,8 +58,31 @@
 
   <div class="ladder">
     <a href="#" id="logo" >calculator</a>
-
-    <div id="calcidiv">
+	
+	  <div id="calcidiv">
+	    <form class="calculator">
+	      <input type="text" id="input" >
+	      <span  type="button" id="clr"   onclick="clr()"> C </span>
+	      <span class="num" id="divide"   onclick="btn('/')">/</span>
+	      <span class="num" id="multiply" onclick="btn('*')">*</span>
+	      <span class="num" id="block7"   onclick="btn('7')">7</span>
+	      <span class="num" id="block8"   onclick="btn('8')">8</span>
+	      <span class="num" id="block9"   onclick="btn('9')">9</span>
+	      <span class="num" id="minus"    onclick="btn('-')">-</span>
+	      <span class="num" id="block4"   onclick="btn('4')">4</span>
+	      <span class="num" id="block5"   onclick="btn('5')">5</span>
+	      <span class="num" id="block6"   onclick="btn('6')">6</span>
+	      <span             id="plus"     onclick="btn('+')">+</span>
+	      <span class="num" id="block3"   onclick="btn('3')">3</span>
+	      <span class="num" id="block2"   onclick="btn('2')">2</span>
+	      <span class="num" id="block1"   onclick="btn('1')">1</span>
+	      <span class="num" id="block0"   onclick="btn('0')">0</span>
+	      <span class="num" id="block00"  onclick="btn('00')">00</span>
+	      <span class="num" id="dot"      onclick="btn('.')">.</span>
+	      <span             id="ans"      onclick="answer()">=</span>
+	    </form>
+	</div>
+<!--     <div id="calcidiv">
      <form class="calculator" name="calc">
       <input class="value" type="text" name="txt" readonly="">
       <span class="num clear" onclick="document.calc.txt.value = ''">C</span>
@@ -82,7 +105,7 @@
       <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
 
      </form>
-     </div>
+     </div> -->
   </div>
 
   <!-- footer start -->
