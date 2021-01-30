@@ -68,6 +68,65 @@ body
 #calcidiv{
 	display:block;
 	text-align:center;
+	width: 160px;
+	height: 200px;
+	
+}
+.calculator
+{
+    text-align:center;
+	padding:50px;
+	position: relative;
+	display: grid;
+	left:100%;
+	margin-left:-20px;
+}
+#input
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+}
+.calculator span
+{
+	display: grid;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #154c4e;
+	place-items: center;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+#clr
+{
+	grid-column: span 2;
+	width: 120px;
+	background: #ff3077;
+	
+}
+#plus
+{
+	grid-row: span 2;
+	height:120px;
+}
+#ans
+{
+	background: #03b1ff;
+}
+.calculator span:active
+{
+	background: #74ff3b;
+	color: #111;
+}
+
+/* #calcidiv{
+	display:block;
+	text-align:center;
 	width: 159px;
 	height: 200px;
 	
@@ -124,7 +183,7 @@ body
 	background: #74ff3b;
 	color: #111;
 }
-
+ */
 
 
 
